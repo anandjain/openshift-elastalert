@@ -16,7 +16,7 @@ First create a new project:
 `$ oc new-project elastalert`
 
 Within this project trigger a new build:  
-`$ oc new-build https://github.com/kilimandjango/openshift-elastalert.git --strategy=Docker --name=elastalert-ocp`
+`$ oc new-build https://github.com/anandjain/openshift-elastalert.git --strategy=Docker --name=elastalert-ocp`
 
 Alternatively you can also clone the git repository and trigger a local Docker build!
 
