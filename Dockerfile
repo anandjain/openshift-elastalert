@@ -1,8 +1,8 @@
 FROM registry.access.redhat.com/rhscl/python-27-rhel7
 
-MAINTAINER Kilian Henneboehle "kilian.henneboehle@mailbox.org"
+MAINTAINER Anand Jain Ostwal "anandjainostwal@gmail.com"
 
-ENV ELASTALERT_VERSION 0.1.29
+ENV ELASTALERT_VERSION 0.1.38
 
 # Elastalert rules directory.
 ENV ELASTALERT_HOME /opt/elastalert
@@ -18,9 +18,9 @@ RUN INSTALL_PKGS="python-devel python-setuptools net-tools" && \
 
 RUN cd $HOME
 
-COPY elastalert-0.1.29.tar.gz /elastalert-0.1.29.tar.gz
+COPY elastalert-0.1.38.tar.gz /elastalert-0.1.38.tar.gz
 
-RUN tar xvf /elastalert-0.1.29.tar.gz
+RUN tar xvf /elastalert-0.1.38.tar.gz
 
 # Copy config
 COPY /configuration/run.sh $ELASTALERT_HOME/run.sh
